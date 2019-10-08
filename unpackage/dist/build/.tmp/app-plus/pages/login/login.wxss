@@ -1,0 +1,158 @@
+
+.myform,.head_icon,.logo_input,.logo_input_user,.logo_input_pass,.logo_input_div,.logo_note,.logo_note_right,.logo_submit_remember,.logo_submit_button{
+	display: -webkit-flex;
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+}
+.myform{
+	-webkit-box-pack: center ;
+	-webkit-justify-content: center ;
+	    -ms-flex-pack: center ;
+	        justify-content: center ;
+	-webkit-flex-wrap: wrap;
+	    -ms-flex-wrap: wrap;
+	        flex-wrap: wrap;
+}
+.head_icon{
+	height: 414rpx;
+	width: 576rpx;
+	-webkit-box-pack:  center ;
+	-webkit-justify-content:  center ;
+	    -ms-flex-pack:  center ;
+	        justify-content:  center ;
+	-webkit-box-align: center;
+	-webkit-align-items: center;
+	    -ms-flex-align: center;
+	        align-items: center;
+}
+.logo_input{
+	width: 576rpx;
+	height: 180rpx;
+	-webkit-box-orient:  vertical;
+	-webkit-box-direction:  normal;
+	-webkit-flex-direction:  column ;
+	    -ms-flex-direction:  column ;
+	        flex-direction:  column ;
+	-webkit-box-pack:  justify;
+	-webkit-justify-content:  space-between ;
+	    -ms-flex-pack:  justify;
+	        justify-content:  space-between ;
+}
+.logo_input_user,.logo_input_pass{
+	color:#f8f8f8 ;
+	background-color: #515151;
+	height: 80rpx;
+	border-radius: 6px;  
+	-webkit-box-align: center;  
+	-webkit-align-items: center;  
+	    -ms-flex-align: center;  
+	        align-items: center;
+}
+.logo_input_user{
+	padding-left: 10rpx;
+	width: 566rpx;
+}
+.logo_input_pass{
+	padding-left: 32rpx;
+	width: 544rpx;
+}
+.logo_input_div{
+	-webkit-box-orient: horizontal;
+	-webkit-box-direction: reverse;
+	-webkit-flex-direction: row-reverse ;
+	    -ms-flex-direction: row-reverse ;
+	        flex-direction: row-reverse ;
+	width: 40rpx;
+}
+.logo_input_user_text,.logo_input_pass_text{
+	padding-left: 40rpx;
+}
+.logo_note{
+	-webkit-box-orient:  horizontal;
+	-webkit-box-direction:  normal;
+	-webkit-flex-direction:  row ;
+	    -ms-flex-direction:  row ;
+	        flex-direction:  row ;
+	-webkit-box-pack:  justify;
+	-webkit-justify-content:  space-between ;
+	    -ms-flex-pack:  justify;
+	        justify-content:  space-between ;
+	-webkit-box-align: center;
+	-webkit-align-items: center;
+	    -ms-flex-align: center;
+	        align-items: center;
+	width: 576rpx;
+	height: 80rpx;
+	color: #f8f8f8;
+}
+.logo_note_right{
+	width: 170rpx;
+	-webkit-box-orient:  horizontal;
+	-webkit-box-direction:  normal;
+	-webkit-flex-direction:  row ;
+	    -ms-flex-direction:  row ;
+	        flex-direction:  row ;
+	-webkit-box-pack:  justify;
+	-webkit-justify-content:  space-between ;
+	    -ms-flex-pack:  justify;
+	        justify-content:  space-between ;
+	-webkit-box-align: center;
+	-webkit-align-items: center;
+	    -ms-flex-align: center;
+	        align-items: center;
+	font-size: 25rpx;
+}
+.logo_note_left{
+	font-size: 25rpx;
+}
+.logo_submit{
+	width: 576rpx;
+	height: 660rpx;
+	color: #f8f8f8;
+}
+.logo_submit_remember{
+	padding-left: 30rpx;
+	padding-bottom: 20rpx;
+	width: 160rpx;
+	-webkit-box-orient:  horizontal;
+	-webkit-box-direction:  normal;
+	-webkit-flex-direction:  row ;
+	    -ms-flex-direction:  row ;
+	        flex-direction:  row ;
+	-webkit-box-pack:  justify;
+	-webkit-justify-content:  space-between ;
+	    -ms-flex-pack:  justify;
+	        justify-content:  space-between ;
+	-webkit-box-align: center;
+	-webkit-align-items: center;
+	    -ms-flex-align: center;
+	        align-items: center;
+	font-size: 25rpx;
+}
+.logo_submit_button{
+	width: 576rpx;
+	height: 190rpx;
+	-webkit-box-orient:  vertical;
+	-webkit-box-direction:  normal;
+	-webkit-flex-direction:  column ;
+	    -ms-flex-direction:  column ;
+	        flex-direction:  column ;
+	-webkit-box-pack:  justify;
+	-webkit-justify-content:  space-between ;
+	    -ms-flex-pack:  justify;
+	        justify-content:  space-between ;
+}
+.logo_button_submit,.logo_button_register{
+	color: #f8f8f8;
+	width: 576rpx;
+	height: 80rpx;
+	border-radius: 6px;
+}
+.logo_button_submit{
+	background-color: #8b5322;
+}
+.logo_button_register{
+	background-color: #6a6a6a;
+}
+

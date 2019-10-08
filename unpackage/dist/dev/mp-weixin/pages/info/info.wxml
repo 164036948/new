@@ -1,0 +1,1 @@
+<view class="zong"><view class="title">{{''+title+''}}</view><view class="content"><rich-text class="richText" nodes="{{content}}"></rich-text></view></view>
