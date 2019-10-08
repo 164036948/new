@@ -147,6 +147,9 @@ __webpack_require__.r(__webpack_exports__);
 
 
 
+
+
+
 {
   components: {
     uniPopup: uniPopup },
@@ -156,6 +159,7 @@ __webpack_require__.r(__webpack_exports__);
       show: false,
       type: '',
       content: '顶部弹 popup',
+      imageURL: '/static/logo/drawable-hdpi/bg_dl.png',
       bottomData: [{
         text: '微信',
         icon: 'https://img-cdn-qiniu.dcloud.net.cn/uni-ui/grid-2.png',

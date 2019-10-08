@@ -1,7 +1,10 @@
 <template>
-	<view>
+	<view class="cs" :style="{backgroundImage: 'url('+imageURL+')'}">
 		<view class="example-body">
 			<button class="button" type="button" @click="togglePopup('bottom', 'share')">底部分享</button>
+		</view>
+		<view class="uni-flex uni-row" style="-webkit-justify-content: center;justify-content: center;">
+			999999999
 		</view>
 		<!-- 底部分享弹窗 -->
 		<uni-popup ref="share" :type="type" :custom="true" @change="change">
@@ -32,6 +35,7 @@
 				show: false,
 				type: '',
 				content: '顶部弹 popup',
+				imageURL : '/static/logo/drawable-hdpi/bg_dl.png',
 				bottomData: [{
 						text: '微信',
 						icon: 'https://img-cdn-qiniu.dcloud.net.cn/uni-ui/grid-2.png',
@@ -119,6 +123,10 @@
 </script>
 
 <style>
+	.cs{
+		height: 100vh;
+		background-size: 100%;
+	}
 /* 底部分享 */
 	.uni-share {
 		background: #fff;

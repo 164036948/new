@@ -1,9 +1,9 @@
 <template>
 	<view class="content" 
-	:style="{backgroundImage: 'url('+imageURL+')',
-	height:windowHeight,
+	:style="{backgroundImage: 'url('+imageURL+')'}">
+	<!-- height:windowHeight,
 	width:windowWidth,
-	backgroundSize:backgroundsize}">
+	backgroundSize:backgroundsize}"> -->
 		<!-- 表单 -->
 		<form class="myform" @submit="formSubmit" @reset="formReset">
 			<!-- 头像 -->
@@ -44,7 +44,7 @@
 				<!-- 实现密码的记忆 -->
 				<view class="logo_submit_remember">
 					<image src="../../static/logo/drawable-hdpi/icon_jzmm_dl.png" mode="scaleToFill" style="width: 30rpx; height: 30rpx;"></image>
-					&nbsp;记住密码<checkbox value="cb" checked="true"  />选中
+					&nbsp;记住密码
 				</view>
 				<!-- 表单数据提交按钮和跳转注册界面按钮 -->
 				<view class="logo_submit_button">
@@ -60,7 +60,7 @@
 	export default {
 		data() {
 			return {
-				imageURL : '/static/logo/drawable-hdpi/bg_dl.png',
+				imageURL : '/static/logo/drawable-xxxhdpi/bg_dl.png',
 				windowHeight : '',
 				windowWidth : '',
 				backgroundsize : '',
@@ -68,15 +68,15 @@
 				array: [{name:'+86'},{name: '+96'}, {name:'+00'}, {name:'+01'}]
 			}
 		},
-		onReady(){
-			uni.getSystemInfo({
-				success: res =>  {
-					this.windowHeight=res.windowHeight+'px';
-					this.windowWidth=res.windowWidth+'px';
-					this.backgroundsize=res.windowWidth+'px '+res.windowHeight+'px';
-				}
-			})
-		},
+		// onReady(){
+		// 	uni.getSystemInfo({
+		// 		success: res =>  {
+		// 			this.windowHeight=res.windowHeight+'px';
+		// 			this.windowWidth=res.windowWidth+'px';
+		// 			this.backgroundsize=res.windowWidth+'px '+res.windowHeight+'px';
+		// 		}
+		// 	})
+		// },
 		methods: {
 			formSubmit(){
 				uni.switchTab({
@@ -94,6 +94,10 @@
 	.myform,.head_icon,.logo_input,.logo_input_user,.logo_input_pass,.logo_input_div,.logo_note,.logo_note_right,.logo_submit_remember,.logo_submit_button{
 		display: -webkit-flex;
 		display: flex;
+	}
+	.content{
+		height: 100vh;
+		background-size: 100% 100vh;
 	}
 	.myform{
 		justify-content: center ;

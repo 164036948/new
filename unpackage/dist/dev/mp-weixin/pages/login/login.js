@@ -193,7 +193,7 @@ var _default =
 {
   data: function data() {
     return {
-      imageURL: '/static/logo/drawable-hdpi/bg_dl.png',
+      imageURL: '/static/logo/drawable-xxxhdpi/bg_dl.png',
       windowHeight: '',
       windowWidth: '',
       backgroundsize: '',
@@ -201,15 +201,15 @@ var _default =
       array: [{ name: '+86' }, { name: '+96' }, { name: '+00' }, { name: '+01' }] };
 
   },
-  onReady: function onReady() {var _this = this;
-    uni.getSystemInfo({
-      success: function success(res) {
-        _this.windowHeight = res.windowHeight + 'px';
-        _this.windowWidth = res.windowWidth + 'px';
-        _this.backgroundsize = res.windowWidth + 'px ' + res.windowHeight + 'px';
-      } });
-
-  },
+  // onReady(){
+  // 	uni.getSystemInfo({
+  // 		success: res =>  {
+  // 			this.windowHeight=res.windowHeight+'px';
+  // 			this.windowWidth=res.windowWidth+'px';
+  // 			this.backgroundsize=res.windowWidth+'px '+res.windowHeight+'px';
+  // 		}
+  // 	})
+  // },
   methods: {
     formSubmit: function formSubmit() {
       uni.switchTab({
